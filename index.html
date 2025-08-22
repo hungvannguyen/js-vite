@@ -1,13 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+<div style="width: 100%; display: flex; flex-direction: column; align-items: end;">
+  <div>
+    <h2>User Profile</h2>
+    <p>Name: <span id="profileName"></span></p>
+    <p>Wallet Amount: <span id="profileWallet"></span></p>
+    <p>Gender: <span id="profileGender"></span></p>
+  </div>
+  <div>
+    <input type="text" id="userName" placeholder="Enter your name" />
+    <button id="updateNameButton">Update Name</button>
+  </div>
+</div>
+
+<input type="number" id="money" placeholder="Enter your Money" />
+
+<button id="buyBtn">Buy</button>
+
+<div>
+  <p>Transaction History</p>
+  <ul id="transactionHistory"></ul>
+  <button id="showTransactionHistoryButton">Show Transaction History</button>
+</div>
+
+<body>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
